@@ -82,6 +82,10 @@ của i trong vòng lặp
 // In block 1, keep for loop, how to print the result like the block code 2
 const l = 10 , ms = 100;
 
+
+function doSetTimeout(i) {
+  setTimeout(function() { console.log(`what is value of indexx : ${i}`) }, ms);
+}
 for(var i = 0 ; i < l ; i++){
-    console.log(`what is value of indexx : ${i}`)
+    doSetTimeout(i);
 }
